@@ -5,6 +5,23 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/*
+ * model
+ * - 비즈니스 데이터를 담는 역할
+ * - DB테이블과 스키마를 표현하는 역할
+ * 
+ * @Entity 
+ * - JAVA class를 entity로 지정
+ * - @Entity 이름을 지정하지 않으면 클래스 이름을 테이블 이름으로 간주
+ * 
+ * @Table(name = "Todo")
+ * - 테이블 이름 지정
+ * - 명시하지 않으면 @Entity 이름을 테이블 이름으로 간주
+ * 
+ * @Id
+ * - 기본키가 될 필드에 지정
+ */
+
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -14,4 +31,4 @@ public class TodoEntity {
 	private String userId;	// 이 오브젝트를 생성한 유저의 아이디
 	private String title;	// Todo 타이틀 예) 운동 하기
 	private boolean done;	// true -  todo를 완료한 경우(checked)
-}
+} 
