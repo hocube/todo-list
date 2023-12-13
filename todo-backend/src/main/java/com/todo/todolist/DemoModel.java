@@ -9,5 +9,5 @@ import lombok.RequiredArgsConstructor;
 public class DemoModel {
 
 	@NonNull
-	private String id;
+	private String id; // 테스트
 }
